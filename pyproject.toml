@@ -1,0 +1,23 @@
+[project]
+name = "asistente"
+version = "0.1.0"
+description = "Asistente RAG para consulta del marco regulatorio de la concesión"
+readme = "README.md"
+authors = [
+    { name = "Ernesto Marruffo", email = "jemf.19@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.7",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
